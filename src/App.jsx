@@ -1,5 +1,5 @@
 import "./App.css";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Button from "./components/Button/Button";
@@ -22,6 +22,7 @@ function App() {
     setSelectedTicket(filteredData);
     setCount(count - 1);
     setTotal(total + 1);
+    toast("Completed!");
   };
   return (
     <>
@@ -45,10 +46,24 @@ function App() {
               ticketsPromise={ticketsPromise}
             ></Maincointainer>
           </Suspense>
-          <Task
-            removeTicket={removeTicket}
-            selectedTicket={selectedTicket}
-          ></Task>
+          <div>
+            <Task
+              removeTicket={removeTicket}
+              selectedTicket={selectedTicket}
+            ></Task>
+            <div className="border-1 p-2 bg-white mt-5 rounded-xl min-h-[200px] ">
+              <h1 className="text-2xl font-semibold">Resolved Task</h1>
+              {selectedTicket.map((ticket) => (
+                <div className="h-[100px] w-[358px]  bg-[#c5e9d2] p-3 my-2 rounded-xl">
+                  <h1 className="text-xl font-semibold">{ticket.title}</h1>
+                  <h2 className="font-semibold text-green-600 h-[43px] w-full bg-[#c5e9d2] rounded-xl mt-2">
+                    Complete
+                  </h2>
+                </div>
+              ))}
+            </div>
+            {/* ----------- */}
+          </div>
         </div>
       </div>
       <Footer></Footer>

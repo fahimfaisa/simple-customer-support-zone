@@ -2,7 +2,6 @@ import React from "react";
 import Complete from "../complete/Complete";
 
 const Task = ({ selectedTicket, removeTicket }) => {
-  console.log(selectedTicket);
   return (
     <div>
       <div className="w-[380px] min-h-[200px]  bg-white pl-[10px] rounded-xl">
