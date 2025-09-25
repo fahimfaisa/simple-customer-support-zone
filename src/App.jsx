@@ -31,7 +31,7 @@ function App() {
       <Navbar></Navbar>
       <Button total={total} count={count}></Button>
       <div className="max-w-[1600px] mx-auto bg-gray-100">
-        <h1 className="text-2xl font-bold ml-20">Customer Tickets</h1>
+        <h1 className="text-2xl font-bold ml-20 mb-4">Customer Tickets</h1>
         <div className="max-w-[1600px] mx-auto bg-gray-100 flex px-18 gap-7 pb-15">
           <Suspense
             fallback={
