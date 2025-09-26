@@ -1,4 +1,5 @@
 import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import { toast, ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";

@@ -6,7 +6,7 @@
     "customer": "Rahim",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2025-09-20"
+    "createdAt": "2025/09/20"
   },
   {
     "id": 2,
@@ -15,25 +15,25 @@
     "customer": "Karim",
     "priority": "Medium",
     "status": "In Progress",
-    "createdAt": "2025-09-21"
+    "createdAt": "2025/09/21"
   },
   {
     "id": 3,
     "title": "Slow website performance",
     "description": "Website is loading very slowly for multiple users.",
-    "customer": "Sadia",
+    "customer": "Sumaiya",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2025-09-18"
+    "createdAt": "2025/09/18"
   },
   {
     "id": 4,
     "title": "Feature request: Dark mode",
     "description": "Customer requested dark mode option in dashboard.",
     "customer": "Fahim",
-    "priority": "Low",
+    "priority": "High",
     "status": "Open",
-    "createdAt": "2025-09-10"
+    "createdAt": "2025/09/10"
   },
   {
     "id": 5,
@@ -42,25 +42,25 @@
     "customer": "Mitu",
     "priority": "Medium",
     "status": "In Progress",
-    "createdAt": "2025-09-19"
+    "createdAt": "2025/09/19"
   },
   {
     "id": 6,
     "title": "Mobile app crash",
     "description": "App crashes when opening notifications.",
     "customer": "Tanvir",
-    "priority": "High",
-    "status": "Open",
-    "createdAt": "2025-09-23"
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2025/09/23"
   },
   {
     "id": 7,
     "title": "Email not delivered",
     "description": "Customer not receiving confirmation emails.",
     "customer": "Joya",
-    "priority": "Low",
+    "priority": "High",
     "status": "Open",
-    "createdAt": "2025-09-15"
+    "createdAt": "2025/09/15"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "customer": "Asif",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2025-09-22"
+    "createdAt": "2025/09/22"
   },
   {
     "id": 9,
@@ -78,15 +78,15 @@
     "customer": "Nadia",
     "priority": "Medium",
     "status": "In Progress",
-    "createdAt": "2025-09-12"
+    "createdAt": "2025/09/12"
   },
   {
     "id": 10,
     "title": "Security vulnerability report",
     "description": "Customer reported SQL injection vulnerability.",
     "customer": "Hasan",
-    "priority": "Medium",
+    "priority": "Low",
     "status": "In Progress",
-    "createdAt": "2025-09-24"
+    "createdAt": "2025/09/24"
   }
 ]

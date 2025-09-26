@@ -17,6 +17,11 @@ const CustomerTicket = ({ ticket, handleSingle }) => {
               : "bg-[#F8F3B9] text-[#9C7700] list-image-none"
           }`}
         >
+          {ticket.status === "Open" ? (
+            <i class="fa-solid fa-circle text-green-600"></i>
+          ) : (
+            <i class="fa-solid fa-circle text-amber-400"></i>
+          )}
           {ticket.status}
         </button>
       </div>
@@ -28,8 +33,8 @@ const CustomerTicket = ({ ticket, handleSingle }) => {
           </p>
           <p className="ml-4 ">
             <span
-              className={`${
-                ticket.priority === "High" ? "text-red-600" : "text-green-500"
+              className={`font-semibold ${
+                ticket.priority === "High" ? "text-red-600" : "text-[#b99313]"
               }`}
             >
               {ticket.priority} PRIORITY
@@ -38,7 +43,13 @@ const CustomerTicket = ({ ticket, handleSingle }) => {
         </div>
         <div className="flex mt-3">
           <p className="text-[#627382] mr-3">{ticket.customer}</p>
-          <p className="text-[#627382]">{ticket.createdAt}</p>
+          <p className="text-[#627382]">
+            {" "}
+            <span>
+              <i class="fa-regular fa-calendar-days"></i>
+            </span>{" "}
+            {ticket.createdAt}
+          </p>
         </div>
       </div>
     </div>

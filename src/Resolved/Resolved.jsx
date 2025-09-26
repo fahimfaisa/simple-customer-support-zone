@@ -9,6 +9,9 @@ const Resolved = ({ completeTicket }) => {
         <div className="h-[100px] w-[358px]  bg-[#c5e9d2] p-3 my-2 rounded-xl">
           <h1 className="text-xl font-semibold">{ticket.title}</h1>
           <h2 className="font-semibold text-green-600 h-[43px] w-full bg-[#c5e9d2] rounded-xl mt-2">
+            <span>
+              <i class="fa-solid fa-check text-green-600"></i>
+            </span>{" "}
             Completed
           </h2>
         </div>
