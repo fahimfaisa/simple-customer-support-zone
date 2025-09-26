@@ -5,7 +5,7 @@ import facebook from "../../assets/fi_5968764.png";
 import message from "../../assets/fi_6244710.png";
 const Footer = () => {
   return (
-    <div className="max-w-[1600px] h-[435px] mx-auto pt-[80px]  px-[80px] bg-black">
+    <div className="max-w-[1600px] min-h-[435px] mx-auto pt-[80px]  px-[80px] bg-black">
       <div className="flex gap-[70px] border-b-1 border-gray-600 pb-10 ">
         <div className="max-w-[350px] text-white">
           <h1 className="text-2xl font-bold">CS — Ticket System</h1>

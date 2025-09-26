@@ -22,6 +22,7 @@ function App() {
   const removeTicket = (p) => {
     const filteredData = selectedTicket.filter((tik) => tik.id !== p.id);
     setSelectedTicket(filteredData);
+    console.log(filteredData);
     setCount(count - 1);
     setTotal(total + 1);
     toast("Completed!");
@@ -32,7 +33,7 @@ function App() {
       <Button total={total} count={count}></Button>
       <div className="max-w-[1600px] mx-auto bg-gray-100">
         <h1 className="text-2xl font-bold ml-20 mb-4">Customer Tickets</h1>
-        <div className="max-w-[1600px] mx-auto bg-gray-100 flex px-18 gap-7 pb-15">
+        <div className=" max-w-[1600px] mx-auto bg-gray-100 px-18 gap-7 pb-15 flex">
           <Suspense
             fallback={
               <div className="items-center mx-auto">

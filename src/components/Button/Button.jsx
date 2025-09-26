@@ -3,7 +3,7 @@ import bgImg from "../../assets/vector1.png";
 const Button = ({ count, total }) => {
   return (
     <div>
-      <div className="mx-auto max-w-[1600px] grid grid-cols-2 p-[80px]  bg-gray-100">
+      <div className="mx-auto max-w-[1600px] grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center p-[80px]  bg-gray-100">
         <div className="flex rounded-md text-white h-[250px] w-[708px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-center  ">
           <img src={bgImg} className="h-full w-[300px]" alt="" />
           <div className="mt-10">
